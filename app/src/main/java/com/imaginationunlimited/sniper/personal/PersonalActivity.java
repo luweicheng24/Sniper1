@@ -7,4 +7,23 @@ import com.imaginationunlimited.sniper.base.BaseActivity;
  * BJ AlphaMobile
  */
 public class PersonalActivity extends BaseActivity {
+    @Override
+    protected void afterViewFound() {
+
+    }
+
+    @Override
+    public void setContentView() {
+
+    }
+
+    @Override
+    public void setUpPresenter() {
+
+    }
+
+    @Override
+    public void findViews() {
+
+    }
 }

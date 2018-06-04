@@ -7,6 +7,7 @@
     tools:context="com.imaginationunlimited.sniper.main.MainActivity">
 
     <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -18,5 +19,28 @@
         android:layout_width="match_parent"
         android:layout_height="56dp">
 
+        <ImageView
+            android:id="@+id/main_button_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/main_button_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/main_button_personal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher" />
     </LinearLayout>
 </LinearLayout>

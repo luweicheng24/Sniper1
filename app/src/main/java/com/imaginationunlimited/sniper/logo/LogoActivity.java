@@ -16,4 +16,24 @@ public class LogoActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logo);
     }
+
+    @Override
+    protected void afterViewFound() {
+
+    }
+
+    @Override
+    public void setContentView() {
+
+    }
+
+    @Override
+    public void setUpPresenter() {
+
+    }
+
+    @Override
+    public void findViews() {
+
+    }
 }

@@ -1,8 +1,5 @@
 package com.imaginationunlimited.sniper.chat;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-
 import com.imaginationunlimited.sniper.base.BaseActivity;
 
 /**
@@ -11,8 +8,22 @@ import com.imaginationunlimited.sniper.base.BaseActivity;
  */
 public class ChatActivity extends BaseActivity {
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void afterViewFound() {
+
+    }
+
+    @Override
+    public void setContentView() {
+
+    }
+
+    @Override
+    public void setUpPresenter() {
+
+    }
+
+    @Override
+    public void findViews() {
 
     }
 }
