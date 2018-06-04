@@ -37,6 +37,9 @@
         <activity android:name=".chat.ChatActivity">
 
         </activity>
+        <activity android:name=".personal.PersonalActivity">
+
+        </activity>
 
         <!--TX-->
         <service
