@@ -19,7 +19,26 @@ public class LogoActivity extends BaseActivity {
 
     @Override
     protected void afterViewFound() {
-
+//        RESTfulFactory.getInstance().createJson(DataService.class)
+//                .login("8613621093593","0897")
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(new Subscriber<JSONObject>() {
+//                    @Override
+//                    public void onCompleted() {
+//
+//                    }
+//
+//                    @Override
+//                    public void onError(Throwable e) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onNext(JSONObject jsonObject) {
+//                        Log.e("msc", jsonObject.toString() + "  ");
+//                    }
+//                });
     }
 
     @Override

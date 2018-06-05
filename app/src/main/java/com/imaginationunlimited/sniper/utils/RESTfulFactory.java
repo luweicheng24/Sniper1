@@ -30,7 +30,7 @@ import rx.schedulers.Schedulers;
  */
 
 public class RESTfulFactory {
-    public static final String API = "http://poto.alphatech.mobi/api/";
+    public static final String API = "http://dating.alphatech.mobi/api/";
     //api地址
     //Todo 添加debug切换
     private final static String BASE_URL = API;
