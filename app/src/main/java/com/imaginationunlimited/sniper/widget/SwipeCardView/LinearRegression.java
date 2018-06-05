@@ -1,30 +1,6 @@
 package com.imaginationunlimited.sniper.widget.SwipeCardView;
 
 
-/*************************************************************************
- *  Compilation:  javac LinearRegression.java
- *  Execution:    java  LinearRegression
- *
- *  Compute least squares solution to y = beta * x + alpha.
- *  Simple linear regression.
- *
- *************************************************************************/
-
-
-/**
- *  The <tt>LinearRegression</tt> class performs a simple linear regression
- *  on an set of <em>N</em> data points (<em>y<sub>i</sub></em>, <em>x<sub>i</sub></em>).
- *  That is, it fits a straight line <em>y</em> = &alpha; + &beta; <em>x</em>,
- *  (where <em>y</em> is the response variable, <em>x</em> is the predictor variable,
- *  &alpha; is the <em>y-intercept</em>, and &beta; is the <em>slope</em>)
- *  that minimizes the sum of squared residuals of the linear regression model.
- *  It also computes associated statistics, including the coefficient of
- *  determination <em>R</em><sup>2</sup> and the standard deviation of the
- *  estimates for the slope and <em>y</em>-intercept.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
 public class LinearRegression {
     private final int N;
     private final double alpha, beta;
