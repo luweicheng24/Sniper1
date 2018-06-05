@@ -18,6 +18,12 @@ android {
     }
 }
 
+ext {
+    retrofitVersion = '2.1.0'
+    rxjavaVersion = '1.2.1'
+    okhttpVersion = '3.4.2'
+}
+
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -35,4 +41,14 @@ dependencies {
     implementation files('libs/soload.jar')
     implementation files('libs/tls_sdk.jar')
     implementation files('libs/wup-1.0.0-SNAPSHOT.jar')
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+
+    implementation "io.reactivex:rxandroid:$rxjavaVersion"
+    implementation "io.reactivex:rxjava:$rxjavaVersion"
+
+    implementation "com.squareup.okhttp3:okhttp:$okhttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
 }
