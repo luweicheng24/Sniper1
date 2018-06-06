@@ -4,6 +4,7 @@ import android.view.View;
 
 import com.imaginationunlimited.sniper.R;
 import com.imaginationunlimited.sniper.base.BaseActivity;
+import com.imaginationunlimited.sniper.fragment.PapapaFragment;
 import com.imaginationunlimited.sniper.main.presenter.IMainPresenter;
 import com.imaginationunlimited.sniper.main.presenter.IMainPresenterCompl;
 import com.imaginationunlimited.sniper.main.viewInterface.IViewListener;
@@ -15,6 +16,12 @@ public class MainActivity extends BaseActivity implements IViewListener {
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_main);
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, PapapaFragment.instance())
+                .commitAllowingStateLoss();
+
     }
 
     @Override
