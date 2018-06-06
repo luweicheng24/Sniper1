@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number" />
+
+    <EditText
+        android:id="@+id/verification_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Verification Code" />
+
+    <Button
+        android:id="@+id/get_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getVerification"
+        android:text="Get Verification" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="login" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="register"
+        android:text="register" />
+<TextView
+    android:layout_width="wrap_content"
+    android:textColor="#000000"
+    android:text="点击login可登录  登陆账号为1517unimserver  密码 15178797  "
+    android:layout_height="wrap_content" />
+</LinearLayout>
