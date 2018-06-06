@@ -15,12 +15,6 @@ public class MainActivity extends BaseActivity implements IViewListener {
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_main);
-
-//        getSupportFragmentManager()
-//                .beginTransaction()
-//                .replace(R.id.fragment_container, PapapaFragment.instance())
-//                .commitAllowingStateLoss();
-
     }
 
     @Override
