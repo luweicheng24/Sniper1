@@ -5,6 +5,16 @@ package com.imaginationunlimited.sniper.model;
  * BJ AlphaMobile
  */
 public class UserInfoFromService {
+    private static UserInfoFromService userInfoFromService;
+
+    public static UserInfoFromService getInstance() {
+        if (userInfoFromService == null) {
+            userInfoFromService = new UserInfoFromService();
+            return userInfoFromService;
+        }
+        return userInfoFromService;
+    }
+
     private int result;
     private String token;
     private UserOfService user;

@@ -199,8 +199,11 @@ public class LoginActivity extends BaseActivity {
                         UserInfoFromService data = userInfoFromServiceHttpResponse.getData();
                         String token = data.getToken();
                         UserInfoFromService.UserOfService user = data.getUser();
-                        String id = user.getId();
-                        Log.e(TAG, "id = " + id + "  token = " + token);
+
+                        UserInfoFromService.getInstance().setToken(token);
+                        UserInfoFromService.getInstance().setUser(user);
+                        Log.e(TAG, "id    = " + UserInfoFromService.getInstance().getUser().getId()
+                                + "\ntoken = " + UserInfoFromService.getInstance().getToken());
 
 //                        String mUserName = this.mUserName.getText().toString() + "unimserver";
 //                        String pwd = getPwd();
