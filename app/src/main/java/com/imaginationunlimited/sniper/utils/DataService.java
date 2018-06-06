@@ -1,6 +1,8 @@
 package com.imaginationunlimited.sniper.utils;
 
 
+import com.imaginationunlimited.sniper.model.UserInfoFromService;
+
 import org.json.JSONObject;
 
 import retrofit2.http.GET;
@@ -47,7 +49,7 @@ public interface DataService {
     login(@Query("phone") String phoneNumber);
 
     @GET("login")
-    Observable<JSONObject>
+    Observable<HttpResponse<UserInfoFromService>>
     login(@Query("phone") String phoneNumber, @Query("code") String code);
 
     //配置列表
