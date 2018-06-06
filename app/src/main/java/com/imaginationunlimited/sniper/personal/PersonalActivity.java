@@ -1,5 +1,6 @@
 package com.imaginationunlimited.sniper.personal;
 
+import com.imaginationunlimited.sniper.R;
 import com.imaginationunlimited.sniper.base.BaseActivity;
 
 /**
@@ -14,7 +15,7 @@ public class PersonalActivity extends BaseActivity {
 
     @Override
     public void setContentView() {
-
+            setContentView(R.layout.activity_personal);
     }
 
     @Override
