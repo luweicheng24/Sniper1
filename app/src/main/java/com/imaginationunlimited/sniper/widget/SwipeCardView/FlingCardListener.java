@@ -12,7 +12,7 @@ public class FlingCardListener implements View.OnTouchListener {
 
     private final float objectX;
     private final float objectY;
-    private final float DEFAULT_OBJECT_Y = 0;
+    private final float DEFAULT_OBJECT_Y = -20;
     private final int objectH;
     private final int objectW;
     private final int parentWidth;
@@ -190,11 +190,11 @@ public class FlingCardListener implements View.OnTouchListener {
             final int duration = 200;
             if (movedBeyondLeftBorder()) {
                 // Left Swipe
-                onSelected(true, getExitPoint(-objectW), duration);
+                onSelected(false, true, getExitPoint(-objectW), duration);
                 mFlingListener.onScroll(1f, -1.0f);
             } else if (movedBeyondRightBorder()) {
                 // Right Swipe
-                onSelected(false, getExitPoint(parentWidth), duration);
+                onSelected(false, false, getExitPoint(parentWidth), duration);
                 mFlingListener.onScroll(1f, 1.0f);
             } else {
                 float absMoveXDistance = Math.abs(aPosX - objectX);
@@ -257,7 +257,7 @@ public class FlingCardListener implements View.OnTouchListener {
     }
 
 
-    public void onSelected(final boolean isLeft, float exitY, long duration) {
+    public void onSelected(final boolean needRotation, final boolean isLeft, float exitY, long duration) {
         isAnimationRunning = true;
         float exitX;
         if (isLeft) {
@@ -271,7 +271,7 @@ public class FlingCardListener implements View.OnTouchListener {
                 .setInterpolator(new LinearInterpolator())
                 .translationX(exitX)
                 .translationY(exitY)
-                .rotation(isLeft ? BASE_ROTATION_DEGREES * 2 : -BASE_ROTATION_DEGREES * 2)
+                .rotation(needRotation ? (isLeft ? BASE_ROTATION_DEGREES * 2 : -BASE_ROTATION_DEGREES * 2) : 0)
                 .setListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
@@ -300,7 +300,7 @@ public class FlingCardListener implements View.OnTouchListener {
      */
     public void selectLeft(long duration) {
         if (!isAnimationRunning)
-            onSelected(true, DEFAULT_OBJECT_Y, duration);
+            onSelected(true, true, DEFAULT_OBJECT_Y, duration);
     }
 
     /**
@@ -316,7 +316,7 @@ public class FlingCardListener implements View.OnTouchListener {
      */
     public void selectRight(long duration) {
         if (!isAnimationRunning)
-            onSelected(false, DEFAULT_OBJECT_Y, duration);
+            onSelected(true, false, DEFAULT_OBJECT_Y, duration);
     }
 
     private float getExitPoint(int exitXPoint) {

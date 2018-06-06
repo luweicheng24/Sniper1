@@ -1,11 +1,13 @@
 package com.imaginationunlimited.sniper.widget.SwipeCardView;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.os.Build;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -166,6 +168,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
         }
     }
 
+    @SuppressLint("WrongConstant")
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     private void makeAndAddView(View child, int index) {
 
@@ -259,7 +262,7 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
 //            for (; i < LAST_OBJECT_IN_STACK; i++, multiple--) {
 //                View underTopView = getChildAt(i);
 //                int offset = (int) (yOffsetStep * (multiple - rate));
-//                underTopView.offsetTopAndBottom(offset - underTopView.getTop() + initTop);
+////                underTopView.offsetTopAndBottom(offset - underTopView.getTop() + initTop);
 //                underTopView.setScaleX(1 - SCALE_STEP * multiple + SCALE_STEP * rate);
 //                underTopView.setScaleY(1 - SCALE_STEP * multiple + SCALE_STEP * rate);
 //            }
@@ -303,7 +306,8 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
 
                     @Override
                     public void onScroll(float progress, float scrollXProgress) {
-//                                Log.e("Log", "onScroll " + progress);
+                        Log.i("Log", "onScroll " + progress);
+                        Log.i("Log", "scrollXProgress " + scrollXProgress);
                         adjustChildrenOfUnderTopView(progress);
                         mFlingListener.onScroll(progress, scrollXProgress);
                     }
