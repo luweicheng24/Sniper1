@@ -166,7 +166,6 @@ public class FlingCardListener implements View.OnTouchListener {
         return true;
     }
 
-
     private float getScrollProgress() {
         float dx = aPosX - objectX;
         float dy = aPosY - objectY;

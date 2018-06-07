@@ -56,4 +56,8 @@ public interface DataService {
     @GET("getHomeList")
     Observable<JSONObject>
     getHomeJson(@Query("version") int version);
+
+    @GET("recommend")
+    Observable<JSONObject>
+    getHomeItemList(@Query("token") String token);
 }

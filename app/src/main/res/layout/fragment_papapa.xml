@@ -38,6 +38,34 @@
         swipe:max_visible="4"
         swipe:min_adapter_stack="4"
         swipe:y_offset_step="28dp" />
+    <RelativeLayout
+        android:id="@+id/layout_like"
+        android:layout_alignParentRight="true"
+        android:layout_width="150dp"
+        android:background="#00000000"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="like"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_nope"
+        android:layout_alignParentLeft="true"
+        android:layout_width="150dp"
+        android:background="#00000000"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="nope"
+            android:textColor="#000000"
+            android:textSize="25sp"/>
+    </RelativeLayout>
 
 
 </RelativeLayout>
