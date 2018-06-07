@@ -9,7 +9,9 @@ import com.imaginationunlimited.sniper.R;
 import com.imaginationunlimited.sniper.base.BaseActivity;
 import com.imaginationunlimited.sniper.main.MainActivity;
 import com.imaginationunlimited.sniper.model.UserInfo;
+import com.imaginationunlimited.sniper.model.UserInfoFromService;
 import com.imaginationunlimited.sniper.utils.DataService;
+import com.imaginationunlimited.sniper.utils.HttpResponse;
 import com.imaginationunlimited.sniper.utils.RESTfulFactory;
 import com.imaginationunlimited.sniper.utils.TLSService;
 import com.imaginationunlimited.sniper.utils.Util;
@@ -40,7 +42,8 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     protected void afterViewFound() {
-
+        mUserName.setText("8613621093593");
+        mVerificationCode.setText("0541");
     }
 
     @Override
@@ -176,24 +179,31 @@ public class LoginActivity extends BaseActivity {
     }
 
     public void register(View view) {
-        RESTfulFactory.getInstance().createJson(DataService.class)
+        RESTfulFactory.getInstance().create(DataService.class)
                 .login(mUserName.getText().toString(), mVerificationCode.getText().toString())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Subscriber<JSONObject>() {
+                .subscribe(new Subscriber<HttpResponse<UserInfoFromService>>() {
                     @Override
                     public void onCompleted() {
-
+                        Log.e("msc", "onCompleted");
                     }
 
                     @Override
                     public void onError(Throwable e) {
-
+                        Log.e("msc", "onError " + e.getMessage());
                     }
 
                     @Override
-                    public void onNext(JSONObject jsonObject) {
-                        Log.e("msc", jsonObject.toString() + "  ");
+                    public void onNext(HttpResponse<UserInfoFromService> userInfoFromServiceHttpResponse) {
+                        UserInfoFromService data = userInfoFromServiceHttpResponse.getData();
+                        String token = data.getToken();
+                        UserInfoFromService.UserOfService user = data.getUser();
+
+                        UserInfoFromService.getInstance().setToken(token);
+                        UserInfoFromService.getInstance().setUser(user);
+                        Log.e(TAG, "id    = " + UserInfoFromService.getInstance().getUser().getId()
+                                + "\ntoken = " + UserInfoFromService.getInstance().getToken());
 
 //                        String mUserName = this.mUserName.getText().toString() + "unimserver";
 //                        String pwd = getPwd();

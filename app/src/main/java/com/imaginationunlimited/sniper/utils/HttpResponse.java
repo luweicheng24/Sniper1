@@ -14,11 +14,11 @@ public class HttpResponse<T> {
     }
 
     public String getMessage() {
-        return message;
+        return msg;
     }
 
     public void setMessage(String message) {
-        this.message = message;
+        this.msg = message;
     }
 
     public T getData() {
@@ -30,6 +30,6 @@ public class HttpResponse<T> {
     }
 
     private int code;
-    private String message;
+    private String msg;
     private T data;
 }
