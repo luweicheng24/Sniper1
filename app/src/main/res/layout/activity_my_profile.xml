@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,359 +8,394 @@
     android:orientation="vertical"
     tools:context="com.imaginationunlimited.sniper.personal.MyProfileActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_height="56dp">
 
-    <LinearLayout
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="72dp"
+            android:text="My profile"
+            android:textSize="16sp"
+            android:textColor="#de000000"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="#ffffff">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimary"></LinearLayout>
+            android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorPrimary">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="16dp"
-                android:text="Smart Photos"
-                android:textColor="#de000000"
-                android:textSize="16sp" />
 
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="16dp" />
+            </LinearLayout>
 
-        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="#ffffff">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginLeft="14dp"
-            android:layout_marginRight="19dp"
-            android:text="Smart Photos continusly tests all your profile photos and picks the best one to show first"
-            android:textColor="#bbbbbb"
-            android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="Smart Photos"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp" />
+
+            </RelativeLayout>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="18dp"
-                android:text="Basic Info"
-                android:textColor="#de000000"
-                android:textSize="20sp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="16dp"
-                android:text="About Me"
-                android:textColor="#de000000"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="16dp"
-                android:background="@drawable/icon_arrow_gray" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="#1e000000" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <TextView
-                android:id="@+id/tv_job1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="13dp"
-                android:gravity="center"
-                android:text="Job"
-                android:textColor="#de000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/tv_job"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/tv_job1"
-                android:layout_marginLeft="20dp"
-                android:gravity="center"
-                android:text="Student"
-                android:textColor="#8a000000"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="21dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="37dp"
-                android:background="@drawable/icon_edit" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="#1e000000" />
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <TextView
-                android:id="@+id/tv_school1"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="13dp"
-                android:gravity="center"
-                android:text="School"
-                android:textColor="#de000000"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/tv_school"
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_alignParentLeft="true"
-                android:layout_below="@+id/tv_school1"
-                android:layout_marginLeft="20dp"
-                android:gravity="center"
-                android:text="University of Arts London"
-                android:textColor="#8a000000"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="21dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="37dp"
-                android:background="@drawable/icon_edit" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="#1e000000" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="18dp"
-                android:text="Linked Account"
-                android:textColor="#de000000"
-                android:textSize="20sp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
                 android:layout_marginLeft="14dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginRight="19dp"
+                android:text="Smart Photos continusly tests all your profile photos and picks the best one to show first"
+                android:textColor="#bbbbbb"
+                android:textSize="14sp" />
 
-                android:background="@drawable/icon_ins" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
 
-            <TextView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="Basic Info"
+                    android:textColor="#de000000"
+                    android:textSize="20sp" />
 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="58dp"
-                android:layout_marginTop="20dp"
-                android:text="Show My Instagram"
-                android:textColor="#de000000"
-                android:textSize="16sp" />
+            </RelativeLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:layout_toLeftOf="@+id/iv_icon_arraow"
-                android:gravity="center"
-                android:text="Connect"
-                android:textColor="#8a000000"
-                android:textSize="16sp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center">
 
-            <ImageView
-                android:id="@+id/iv_icon_arraow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/icon_arrow_gray" />
-        </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="About Me"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/icon_arrow_gray" />
+            </RelativeLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="14dp"
-                android:layout_marginTop="20dp"
-
-                android:background="@drawable/icon_music" />
-
-            <TextView
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="20dp"
-                android:layout_marginLeft="58dp"
-                android:layout_marginTop="20dp"
-                android:text="Show Spotify Music"
-                android:textColor="#de000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="8dp"
-                android:layout_toLeftOf="@+id/iv_icon_arraow2"
-                android:gravity="center"
-                android:text="TFI Digital"
-                android:textColor="#8a000000"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:id="@+id/iv_icon_arraow2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/icon_arrow_gray" />
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:background="#1e000000" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="18dp"
-                android:text="Instagram Photos"
-                android:textColor="#de000000"
-                android:textSize="20sp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:textSize="16sp"
-                android:text="Show Instagram Photos"
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
                 android:layout_marginLeft="16dp"
-                android:textColor="#de000000"
-                android:gravity="center"
-                android:layout_centerVertical="true"
-                android:layout_height="30dp" />
+                android:layout_marginRight="16dp"
+                android:background="#1e000000" />
 
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="16dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
 
-        </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_job1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="Job"
+                    android:textColor="#de000000"
+                    android:textSize="12sp" />
 
-        <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="200dp">
+                <TextView
+                    android:id="@+id/tv_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_job1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="Student"
+                    android:textColor="#8a000000"
+                    android:textSize="16sp" />
 
-        </android.support.v4.view.ViewPager>
-    </LinearLayout>
-</ScrollView>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#1e000000" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <TextView
+                    android:id="@+id/tv_school1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center"
+                    android:text="School"
+                    android:textColor="#de000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/tv_school1"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="University of Arts London"
+                    android:textColor="#8a000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@drawable/icon_edit" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#1e000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="Linked Account"
+                    android:textColor="#de000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+
+                    android:background="@drawable/icon_ins" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Show My Instagram"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/iv_icon_arraow"
+                    android:gravity="center"
+                    android:text="Connect"
+                    android:textColor="#8a000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_icon_arraow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/icon_arrow_gray" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="20dp"
+
+                    android:background="@drawable/icon_music" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Show Spotify Music"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/iv_icon_arraow2"
+                    android:gravity="center"
+                    android:text="TFI Digital"
+                    android:textColor="#8a000000"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_icon_arraow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/icon_arrow_gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#1e000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="18dp"
+                    android:text="Instagram Photos"
+                    android:textColor="#de000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="Show Instagram Photos"
+                    android:textColor="#de000000"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp" />
+
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
