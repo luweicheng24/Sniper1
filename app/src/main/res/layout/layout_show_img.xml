@@ -17,13 +17,14 @@
             android:layout_weight="1">
 
             <com.imaginationunlimited.sniper.widget.SquareImageVIew
+                android:id="@+id/image1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="14dp"
-
-                android:background="#eaeaea" />
+                android:background="@drawable/i5" />
 
             <ImageView
+                android:id="@+id/edit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -31,6 +32,8 @@
                 android:background="@drawable/icon_close" />
 
             <ImageView
+                android:id="@+id/add1"
+                android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -55,6 +58,7 @@
                     android:background="#eaeaea" />
 
                 <ImageView
+                    android:visibility="invisible"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
@@ -82,6 +86,8 @@
 
                 <ImageView
                     android:layout_width="wrap_content"
+                    android:visibility="invisible"
+
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
@@ -116,86 +122,91 @@
 
                 android:background="#eaeaea" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/icon_close" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/icon_addphoto" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.imaginationunlimited.sniper.widget.SquareImageVIew
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-
-                android:layout_margin="14dp"
-                android:background="#eaeaea" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/icon_close" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/icon_addphoto" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/icon_ok" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <com.imaginationunlimited.sniper.widget.SquareImageVIew
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="14dp"
-
-                android:background="#eaeaea" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/icon_close" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:background="@drawable/icon_addphoto" />
-
-            <ImageView
+            <ImageVie
                 android:visibility="invisible"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_close" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_addphoto" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.imaginationunlimited.sniper.widget.SquareImageVIew
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_margin="14dp"
+                android:background="#eaeaea" />
+
+            <ImageView
+                android:visibility="invisible"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_close" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_addphoto" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:background="@drawable/icon_ok" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.imaginationunlimited.sniper.widget.SquareImageVIew
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="14dp"
+
+                android:background="#eaeaea" />
+
+            <ImageView
+                android:visibility="invisible"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_close" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_addphoto" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_ok"
+                android:visibility="invisible" />
 
 
         </RelativeLayout>

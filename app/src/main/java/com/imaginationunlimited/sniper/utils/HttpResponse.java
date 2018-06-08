@@ -29,7 +29,7 @@ public class HttpResponse<T> {
         this.data = data;
     }
 
-    private int code;
+    private int code;//1
     private String msg;
     private T data;
 }

@@ -25,27 +25,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".main.MainActivity"></activity>
+        <activity android:name=".main.MainActivity" />
         <activity android:name=".logo.LogoActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
-        <activity android:name=".login.LoginActivity"></activity>
-        <activity android:name=".chat.ChatActivity"></activity>
-        <activity android:name=".personal.PersonalActivity"></activity>
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".chat.ChatActivity" />
+        <activity android:name=".personal.PersonalActivity" />
 
         <!-- TX -->
         <service
             android:name="com.tencent.qalsdk.service.QalService"
             android:exported="true"
-            android:process=":QALSERVICE"></service>
+            android:process=":QALSERVICE" />
         <service
             android:name="com.tencent.qalsdk.service.QalAssistService"
             android:exported="false"
-            android:process=":QALSERVICE"></service>
+            android:process=":QALSERVICE" />
 
         <!-- 【必须】 离线消息广播接收器 -->
         <receiver
@@ -78,13 +80,16 @@
         </receiver>
         <!-- TX -->
         <activity android:name=".personal.SettingActivity" />
-        <activity android:name=".personal.MyProfileActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".personal.MyProfileActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".personal.AboutUsActivity"></activity>
     </application>
 
 </manifest>
