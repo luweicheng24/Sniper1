@@ -6,6 +6,388 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
 
+        <ImageView
+            android:id="@+id/iv_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/icon_settings" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal">
+
+        <com.imaginationunlimited.sniper.widget.CircleImgView
+            android:id="@+id/iv_head"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="6sp"
+                android:text="Coco, 19"
+                android:textColor="#de000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="6sp"
+                android:text="University of Arts London"
+                android:textColor="#de000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="6sp"
+                android:text="TFI Digital Media"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="36dp"
+                android:layout_height="20dp"
+                android:background="@drawable/background_vip"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.07"
+                android:lineSpacingExtra="2sp"
+                android:text="VIP"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="101dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_mention_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top|right"
+            android:background="@drawable/pop_remind"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingExtra="6sp"
+            android:paddingBottom="10dp"
+            android:text="Perfect Profile"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!--<TextView-->
+        <!--android:visibility="invisible"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/iv_edit"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/pop_remind"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:gravity="center"-->
+        <!--android:lineSpacingExtra="6sp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:text="Perfect Profile"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textStyle="bold" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="51dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="6sp"
+            android:text="Edit profile"
+            android:textColor="#de000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tv_per"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="51dp"
+            android:layout_toLeftOf="@+id/iv_edit"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:text="75%"
+            android:textColor="#ff003c"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/tv_per"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/icon_arrow_gray"
+            android:gravity="center_vertical" />
+
+        <ProgressBar
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:max="100"
+            android:progress="75" />
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="72dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="128dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_above="@+id/iv_edit"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@drawable/pop_remind"-->
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:gravity="center"-->
+    <!--android:lineSpacingExtra="6sp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="14sp"-->
+    <!--android:textStyle="bold"-->
+    <!--tools:text="Perfect Profile" />-->
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginTop="51dp"-->
+    <!--android:fontFamily="sans-serif-medium"-->
+    <!--android:lineSpacingExtra="6sp"-->
+    <!--android:text="Edit profile"-->
+    <!--android:textColor="#de000000"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="normal"-->
+    <!--android:id="@+id/textView" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_per"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginRight="4dp"-->
+    <!--android:layout_toLeftOf="@+id/iv_edit"-->
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:lineSpacingExtra="4sp"-->
+    <!--android:textColor="#ff003c"-->
+    <!--android:textSize="16sp"-->
+    <!--android:textStyle="normal"-->
+    <!--tools:text="75%" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/iv_edit"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tv_per"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_marginRight="14dp"-->
+    <!--android:background="@drawable/icon_arrow_gray"-->
+    <!--android:gravity="center_vertical" />-->
+
+    <!--<ProgressBar-->
+    <!--style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:max="100"-->
+    <!--android:progress="75" />-->
+
+    <!--</RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_aboutus"
+
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="6sp"
+            android:text="Activity"
+            android:textColor="#de000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_arrow_gray" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1e000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="72dp"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:lineSpacingExtra="6sp"
+            android:text="Liked Me"
+            android:textColor="#de000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/tv_likedMe_count"
+            android:background="@drawable/icon_likedme" />
+
+        <TextView
+            android:id="@+id/tv_likedMe_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="32dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="4sp"
+            android:text="122"
+            android:textColor="#de000000"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#1e000000" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="37dp"
+        android:background="#ffffff"
+        app:cardCornerRadius="8dp"
+
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/ad_heyoo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="Boost Popularity &amp; Unlimited Likes"
+                android:textColor="#8a000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>
