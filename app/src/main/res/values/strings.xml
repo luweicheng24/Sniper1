@@ -1,4 +1,37 @@
 <resources>
     <string name="app_name">sniper</string>
     <string name="need_permission">您需要开启权限,并重启应用</string>
+
+
+
+    <string name="settings">Settings</string>
+    <string name="settings_ad">Boost Popularity &amp; Unlimited Likes</string>
+    <string name="settings_base_info">Basic Info</string>
+    <string name="settings_location">Location</string>
+    <string name="settings_distance">Distance Within</string>
+    <string name="settings_auto">Automatic Distance</string>
+    <string name="setting_content">Extend if too few users nearby</string>
+    <string name="setting_showme">Show Me</string>
+    <string name="setting_current_loc">My Current Location</string>
+    <string name="setting_dis">50km</string>
+    <string name="setting_sex_women">Women</string>
+    <string name="setting_age_range">Age Range</string>
+    <string name="setting_notifi">Notifications</string>
+    <string name="setting_logout">Logout</string>
+    <string name="setting_logout_mention">Are you sure you want to logout?
+You will continue to be seen by compatible users in your last known location.</string>
+    <string name="setting_version">Heyoo! V1.0.0</string>
+    <string name="setting_help">Help &amp; Support</string>
+    <string name="setting_rate">Rate Us</string>
+    <string name="setting_privacy">Privacy Clause</string>
+    <string name="setting_person">Terms of Service</string>
+    <string name="setting_restore">Restore Puchased</string>
+    <string name="setting_new_match">New Matches</string>
+    <string name="setting_message">Messages</string>
+    <string name="setting_superlike">Superlikes</string>
+    <string name="setting_show_me">Show me on Heyoo!</string>
+    <string name="setting_shiled_bad">Shield bad information</string>
+    <string name="setting_cancel">Cancel</string>
+
+
 </resources>

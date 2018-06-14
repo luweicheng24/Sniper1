@@ -1,5 +1,7 @@
 package com.imaginationunlimited.sniper.personal;
 
+import android.view.View;
+
 import com.imaginationunlimited.sniper.R;
 import com.imaginationunlimited.sniper.base.BaseActivity;
 
@@ -8,6 +10,7 @@ import com.imaginationunlimited.sniper.base.BaseActivity;
  * BJ AlphaMobile
  */
 public class PersonalActivity extends BaseActivity {
+    View tv_mention_complete;
     @Override
     protected void afterViewFound() {
 
@@ -15,7 +18,7 @@ public class PersonalActivity extends BaseActivity {
 
     @Override
     public void setContentView() {
-            setContentView(R.layout.activity_personal);
+            setContentView(R.layout.activity_setting);
     }
 
     @Override
@@ -25,6 +28,9 @@ public class PersonalActivity extends BaseActivity {
 
     @Override
     public void findViews() {
-
+        tv_mention_complete = findViewById(R.id.tv_mention_complete);
+    }
+    public void hide(View view){
+        tv_mention_complete.setVisibility(View.INVISIBLE);
     }
 }
